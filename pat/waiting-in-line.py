@@ -1,7 +1,8 @@
-#coding=utf-8
+# coding=utf-8
 
 import sys
 from typing import List
+
 
 class Bank:
     def __init__(self, N: int, M: int):
@@ -46,6 +47,7 @@ class Bank:
             mStr = '0' + str(m) if m < 10 else str(m)
             return hStr + ':' + mStr
 
+
 if __name__ == "__main__":
     line1 = sys.stdin.readline().strip()
     N, M, K, Q = list(map(int, line1.split()))
@@ -61,8 +63,3 @@ if __name__ == "__main__":
 
     for index in query_list:
         print(bank.queryTime(index-1))
-
-
-
-
-

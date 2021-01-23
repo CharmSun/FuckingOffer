@@ -12,8 +12,9 @@
 
 from typing import List
 
+
 class Solution:
-    
+
     def duplicate1(self, nums: List[int]) -> int:
         if not nums:
             return -1
@@ -29,7 +30,7 @@ class Solution:
                 nums[cur] = cur
         return -1
 
-    ## 二分查找
+    # 二分查找
     def duplicate2(self, nums: List[int]) -> int:
         if not nums:
             return -1
@@ -49,7 +50,6 @@ class Solution:
                 start = mid + 1
         return -1
 
-
     def countRange(self, nums: List[int], start, end) -> int:
         if not nums:
             return 0
@@ -59,8 +59,9 @@ class Solution:
                 count += 1
         return count
 
-nums1 = [2,3,1,0,2,5,3]
+
+nums1 = [2, 3, 1, 0, 2, 5, 3]
 print(Solution().duplicate1(nums1))
 
-nums2 = [2,3,5,4,3,2,6,7]
+nums2 = [2, 3, 5, 4, 3, 2, 6, 7]
 print(Solution().duplicate2(nums2))
