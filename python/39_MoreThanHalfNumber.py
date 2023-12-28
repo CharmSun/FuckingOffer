@@ -31,7 +31,7 @@ class Solution:
                 if pos != i:
                     nums[pos], nums[i] = nums[i], nums[pos]
         pos += 1
-        nums[pos], nums[start] = nums[start], nums[pos]
+        nums[pos], nums[end] = nums[end], nums[pos]
         return pos
 
     def majorityElement(self, nums: List[int]) -> int:
